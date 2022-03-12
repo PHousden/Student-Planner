@@ -1,27 +1,29 @@
 
-
+//when user click on the finished button
 function buttonClicked() {
-  const timeSpend = document.getElementsByClassName("time_spend");
-  const breakTime = document.getElementsByClassName("break_time");
-  const fSubject = document.getElementsByClassName("first_subjects");
-  const sSubject = document.getElementsByClassName("second_subjects");
-  const tSubject = document.getElementsByClassName("third_subjects");
-}
-DataEC = {
-    datasets = [{
-        backgroundColor: backgroundCategory,
-        data: costGroupedByCategory.amount,
-        borderColor: 'rgba(0,0,0,0.1)', 
-        borderWidth: '1'
-    }]
-            ,
-            labels: costGroupedByCategory.category
+  let timeSpend = document.getElementsByClassName("time_spend");
+  let breakTime = document.getElementsByClassName("break_time");
+  let fSubject = document.getElementsByClassName("first_subjects");
+  let sSubject = document.getElementsByClassName("second_subjects");
+  let tSubject = document.getElementsByClassName("third_subjects");
 }
 
-var optionsEC = {
-    title: {disply: true, text: "The Planing to the study", fontSize: '24', fontFamily: "'Roboto', sans-serif"},
-    legend: {disply: true, position: 'right', aling: 'center'}
-}
+let myChart = document.getElementById('myChart').getContext('2d');
 
-var Pie = document.getElementById('pieChart').getContext('2d');
-PieChart = new Chart(Pie, { type: 'pie', data: DataEC, options: optionsEC});
+let pieChart = new Chart(myChart), {
+    type:'pie',
+    data: {
+        labels: ['Time spend', 'Break Time', 'First Subject', 'Second Subject', 'Third Subject'],
+        datasets: [
+            label: 'Plan',
+            data: [
+                timeSpend,
+                breakTime,
+                fSubject,
+                sSubject,
+                tSubject
+            ]
+        ],
+    },
+    options: {},
+};

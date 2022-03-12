@@ -23,7 +23,6 @@ main {
     border-radius: 25px;
     padding: 10px;
     box-shadow: 0 0 10px 0px;
-    rgba(0,0,0,0.6);
     border: 2px solid rgba(103, 247, 187, 0.822);
 }
 #text-box:hover {
@@ -39,7 +38,4 @@ main {
     border-radius: 25px;
     font-size: 18px;
     font-weight: 400px;
-}
-#button {
-    
 }
