@@ -24,13 +24,13 @@
     <main>
       <form class="form">
         <input
-          type="text"
+          type="number"
           id="text-box"
           class="time_spend"
           placeholder="How much time do you have?"
         />
         <input
-          type="text"
+          type="number"
           id="text-box"
           class="break_time"
           placeholder="how many breaks do you want to have?"
@@ -55,7 +55,8 @@
         />
       </form>
 
-      <button type="button" class="button">Finished</button>
+      <button type="button" class="button" onclick="buttonClicked()">Finished</button>
+      
 
       <div class="container">
         <canvas id="myChart"></canvas>

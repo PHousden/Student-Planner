@@ -40,6 +40,8 @@ main {
     font-size: 18px;
     font-weight: 400px;
 }
-footer {
-    
+.container {
+    margin: auto;
+    width: 40%;
+    text-align: center;
 }
