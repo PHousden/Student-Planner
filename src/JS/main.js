@@ -1,29 +1,53 @@
 
-//when user click on the finished button
-function buttonClicked() {
-  let timeSpend = document.getElementsByClassName("time_spend");
-  let breakTime = document.getElementsByClassName("break_time");
-  let fSubject = document.getElementsByClassName("first_subjects");
-  let sSubject = document.getElementsByClassName("second_subjects");
-  let tSubject = document.getElementsByClassName("third_subjects");
-}
+let timeSpend = document.querySelector(".time_spend");
+let breakTime = document.querySelector(".break_time");
+let fSubject = document.querySelector(".first_subjects");
+let sSubject = document.querySelector(".second_subjects");
+let tSubject = document.querySelector(".third_subjects");
 
-let myChart = document.getElementById('myChart').getContext('2d');
+let myChart = document.getElementById("myChart").getContext("2d");
 
-let pieChart = new Chart(myChart), {
-    type:'pie',
+document.querySelector("button").addEventListener("click", () => {
+  let pieChart = new Chart(myChart, {
+    type: "pie",
     data: {
-        labels: ['Time spend', 'Break Time', 'First Subject', 'Second Subject', 'Third Subject'],
-        datasets: [
-            label: 'Plan',
-            data: [
-                timeSpend,
-                breakTime,
-                fSubject,
-                sSubject,
-                tSubject
-            ]
-        ],
+      labels: [
+        "Time spend",
+        "Break Time",
+        "First Subject",
+        "Second Subject",
+        "Third Subject",
+      ],
+      datasets: [
+        {
+          label: "Plan",
+          data: [
+            timeSpend.value,
+            breakTime.value,
+            fSubject.value,
+            sSubject.value,
+            tSubject.value,
+          ],
+        },
+      ],
+      backgroundColor: [
+        'rgba(255, 99, 132, 0.2)',
+        'rgba(54, 162, 235, 0.2)',
+        'rgba(255, 206, 86, 0.2)',
+        'rgba(75, 192, 192, 0.2)',
+        'rgba(153, 102, 255, 0.2)',
+        'rgba(255, 159, 64, 0.2)'
+    ],
+    borderColor: [
+        'rgba(255, 99, 132, 1)',
+        'rgba(54, 162, 235, 1)',
+        'rgba(255, 206, 86, 1)',
+        'rgba(75, 192, 192, 1)',
+        'rgba(153, 102, 255, 1)',
+        'rgba(255, 159, 64, 1)'
+    ],
+    borderWidth: 1
     },
     options: {},
-};
+  });
+});

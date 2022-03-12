@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
-    <link rel="stylesheet" href="CSS/main-style.css" />
     
+    <link rel="stylesheet" href="CSS/main-style.css" />
+
     <title>Student Planner</title>
   </head>
   <body>
@@ -18,47 +19,56 @@
         <h3>A SIMPLE PLANNER TO ORGANISE YOUR TIME</h3>
         <h3>LET'S PLAN YOUR SESSION</h3>
       </div>
-      
     </header>
-    
 
     <main>
       <form class="form">
-          <div>
-            <input type="text" id="text-box" class="time_spend" placeholder="How much time do you have?"/>
-          </div>
-
-          <div>
-            <input type="text" id="text-box" class="break_time" placeholder="how many breaks do you want to have?" /><br>
-          </div>
-
-          <div>
-            <input type="text" id="text-box" class="first_subjects" placeholder="What is the first thing you would like to achieve" />
-          </div>
-        
-          <div>
-            <input type="text" id="text-box" class="second_subjects" placeholder="What is the second thing you would like to achieve?"/>
-          </div>
-        
-          <div >
-            <input type="text" id="text-box" class="third_subjects" placeholder="What is the third thing you would like to achieve" />
-          </div>   
+        <input
+          type="text"
+          id="text-box"
+          class="time_spend"
+          placeholder="How much time do you have?"
+        />
+        <input
+          type="text"
+          id="text-box"
+          class="break_time"
+          placeholder="how many breaks do you want to have?"
+        /><br />
+        <input
+          type="text"
+          id="text-box"
+          class="first_subjects"
+          placeholder="What is the first thing you would like to achieve"
+        />
+        <input
+          type="text"
+          id="text-box"
+          class="second_subjects"
+          placeholder="What is the second thing you would like to achieve?"
+        />
+        <input
+          type="text"
+          id="text-box"
+          class="third_subjects"
+          placeholder="What is the third thing you would like to achieve"
+        />
       </form>
 
-      
-        <button type="button" class="button" onclick="buttonClicked()">Finished</button>
-      
-
+      <button type="button" class="button">Finished</button>
 
       <div class="container">
-          <canvas id="myChart"></canvas>
+        <canvas id="myChart"></canvas>
       </div>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+      <script src="JS/main.js"></script>
       
     </main>
 
     <footer>
-        <p>&copy; DK_CODE</p>
-        <p>12/3/2022</p>
+      <p>&copy; DK_CODE</p>
+      <p>12/3/2022</p>
     </footer>
   </body>
 </html>
