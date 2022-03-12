@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
     <link rel="stylesheet" href="CSS/main-style.css" />
+    <script src="JS/main.js"></script>
     <title>Student Planner</title>
   </head>
   <body>
@@ -45,11 +46,11 @@
       </form>
 
       <div>
-        <button type="button" class="button">Finished</button>
+        <button type="button" class="button" onclick="buttonClicked()">Finished</button>
       </div>
 
       <div class="pie-chart">
-          <div class="chart-canvas">
+          <div class="chart-canvas" id="pieChart">
 
           </div>
       </div>
