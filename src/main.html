@@ -22,47 +22,20 @@
     </header>
 
     <main>
-      <form class="form">
-        <input
-          type="number"
-          id="text-box"
-          class="time_spend"
-          placeholder="How much time do you have?"
-        />
-        <input
-          type="number"
-          id="text-box"
-          class="break_time"
-          placeholder="how many breaks do you want to have?"
-        /><br />
-        <input
-          type="text"
-          id="text-box"
-          class="first_subjects"
-          placeholder="What is the first thing you would like to achieve"
-        />
-        <input
-          type="text"
-          id="text-box"
-          class="second_subjects"
-          placeholder="What is the second thing you would like to achieve?"
-        />
-        <input
-          type="text"
-          id="text-box"
-          class="third_subjects"
-          placeholder="What is the third thing you would like to achieve"
-        />
-      </form>
-
-      <button type="button" class="button" onclick="buttonClicked()">Finished</button>
-      
-
-      <div class="container">
-        <canvas id="myChart"></canvas>
-      </div>
-
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+        <input type="number" id="time_spend" class="text-box" placeholder="How much time do you have?" />
+        <input type="number" id="break_time" class="text-box"  placeholder="how many breaks do you want to have?" /><br>
+        <input type="text" id="first_subjects" class="subjects-box"  placeholder="Most confident subject?" /><input type="number" id="first_percentage" class="percantage_subject" placeholder="Understand percentage ">
+        <input type="text" id="second_subjects"  class="subjects-box"  placeholder="Second confident subject?" /><input type="number" id="second_percentage" class="percantage_subject" placeholder="Understand percentage ">
+        <input type="text" id="third_subjects" class="subjects-box"  placeholder="Third subject?" /> <input type="number" id="third_percentage" class="percantage_subject" placeholder="Understand percentage ">
+        <br>
+        
+        <button type="button" class="button">Finished</button>
+        
+        <div class="container">
+            <canvas id="myChart"></canvas>
+        </div>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
       <script src="JS/main.js"></script>
       
     </main>

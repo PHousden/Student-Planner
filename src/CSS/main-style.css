@@ -16,7 +16,7 @@ main {
     margin: 10px;
 }
 
-#text-box {
+.text-box {
     width: 450px;
     height: 20px;
     font-size: 18px;
@@ -26,8 +26,30 @@ main {
     box-shadow: 0 0 10px 0px;
     border: 2px solid rgba(103, 247, 187, 0.822);
 }
-#text-box:hover {
+.text-box:hover {
     border: 2px solid whitesmoke;
+}
+.percantage_subject {
+    width: 225px;
+    height: 20px;
+    font-size: 18px;
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 30px;
+    border-radius: 25px;
+    padding: 10px;
+    box-shadow: 0 0 10px 0px;
+    border: 2px solid rgba(103, 247, 187, 0.822);
+}
+.subjects-box {
+    width: 250px;
+    height: 20px;
+    font-size: 18px;
+    margin-top: 50px;
+    border-radius: 25px;
+    padding: 10px;
+    box-shadow: 0 0 10px 0px;
+    border: 2px solid rgba(103, 247, 187, 0.822);
 }
 .button {
     margin: 30px;
@@ -44,4 +66,6 @@ main {
     margin: auto;
     width: 40%;
     text-align: center;
+    border: 5px solid rgba(103, 247, 187, 0.822);
+    border-radius: 25px;
 }
