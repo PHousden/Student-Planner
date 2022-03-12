@@ -4,8 +4,12 @@ body {
 }
 header {
     text-align: center;
-    margin: 5px;
+    margin: 0px;
     padding: 10px;
+    background-image: url(../img/elisa-calvet-b-S3nUOqDmUvc-unsplash.jpg);
+    background-repeat: no-repeat;
+    align-items: center;
+    color: white;
 }
 main {
     text-align: center;
@@ -65,7 +69,17 @@ main {
 .container {
     margin: auto;
     width: 40%;
+    height: 807.778px;
     text-align: center;
     border: 5px solid rgba(103, 247, 187, 0.822);
     border-radius: 25px;
+}
+footer {
+    text-align: left;
+    margin: 0px;
+    padding: 10px;
+    background-image: url(../img/elisa-calvet-b-S3nUOqDmUvc-unsplash.jpg);
+    
+    background-repeat: no-repeat;
+    align-items: center;
 }
