@@ -11,3 +11,11 @@ main {
     margin: 20px;
     padding: 5px;
 }
+#text-box {
+    width: 450px;
+    height: 20px;
+    font-size: 18px;
+    margin-top: 50px;
+    border-radius: 25px;
+    padding: 10px;
+}
