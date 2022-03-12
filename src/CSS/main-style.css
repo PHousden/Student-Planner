@@ -11,6 +11,10 @@ main {
     margin: 20px;
     padding: 5px;
 }
+.form {
+    margin: 10px;
+}
+
 #text-box {
     width: 450px;
     height: 20px;
@@ -18,4 +22,24 @@ main {
     margin-top: 50px;
     border-radius: 25px;
     padding: 10px;
+    box-shadow: 0 0 10px 0px;
+    rgba(0,0,0,0.6);
+    border: 2px solid aqua;
+}
+#text-box:hover {
+    border: 2px solid whitesmoke;
+}
+.button {
+    margin: 30px;
+    padding: 10px;
+    text-align: center;
+    background-color: aqua;
+    width: 480px;
+    border: none;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: 400px;
+}
+#button {
+    
 }
