@@ -24,7 +24,7 @@ main {
     padding: 10px;
     box-shadow: 0 0 10px 0px;
     rgba(0,0,0,0.6);
-    border: 2px solid aqua;
+    border: 2px solid rgba(103, 247, 187, 0.822);
 }
 #text-box:hover {
     border: 2px solid whitesmoke;
@@ -33,7 +33,7 @@ main {
     margin: 30px;
     padding: 10px;
     text-align: center;
-    background-color: aqua;
+    background-color: rgba(103, 247, 187, 0.822);
     width: 480px;
     border: none;
     border-radius: 25px;
