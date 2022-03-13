@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
-    
+
     <link rel="stylesheet" href="CSS/main-style.css" />
 
     <title>Student Planner</title>
@@ -19,24 +19,59 @@
         <h3>A SIMPLE PLANNER TO ORGANISE YOUR TIME</h3>
         <h3>LET'S PLAN YOUR SESSION</h3>
       </div>
+      <hr>
+      <div class="table">
+        <div id="nav">
+          <ul>
+            <li><a href="about us.html">About Us</a></li>
+          </ul>
+        </div>
+      </div>
     </header>
 
     <main>
-        <input type="number" id="time_spend" class="text-box" placeholder="How much time do you have?" />
-        <input type="number" id="break_time" class="text-box"  placeholder="how many breaks do you want to have?" /><br>
-        <input type="text" id="first_subjects" class="subjects-box"  placeholder="Most confident subject?" /><input type="number" id="first_percentage" class="percantage_subject" placeholder="Understand percentage ">
-        <input type="text" id="second_subjects"  class="subjects-box"  placeholder="Second confident subject?" /><input type="number" id="second_percentage" class="percantage_subject" placeholder="Understand percentage ">
-        <input type="text" id="third_subjects" class="subjects-box"  placeholder="Third subject?" /> <input type="number" id="third_percentage" class="percantage_subject" placeholder="Understand percentage ">
-        <br>
+      <input
+        type="number"
+        id="time_spend"
+        class="text-box"
+        placeholder="How much time do you have?"
+      />
+      <input
+        type="number"
+        id="break_time"
+        class="text-box"
+        placeholder="how many breaks do you want to have?"
+      /><br />
+      <input
+        type="text"
+        id="first_subjects"
+        class="subjects-box"
+        placeholder="Most confident subject?"
+      />
+      <input
+        type="text"
+        id="second_subjects"
+        class="subjects-box"
         
-        <button type="button" class="button">Finished</button>
-        
-        <div class="container">
-            <canvas id="myChart"></canvas>
+        placeholder="Second confident subject?"
+      />
+      <input
+        type="text"
+        id="third_subjects"
+        class="subjects-box"
+        placeholder="Third subject?"
+      />
+      <br />
+
+      <button type="button" class="button">Finished</button>
+
+      <div class="container">
+        <div id="table-result">
+
         </div>
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+      </div> 
       <script src="JS/main.js"></script>
+
       
     </main>
 
