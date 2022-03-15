@@ -31,7 +31,7 @@ document.querySelector("button").addEventListener("click", () => {
         datasets: [
           {
             label: "Plan",
-            data: [timeSpend, breakTime, mostCon, secCon, thirdCon],
+            data: [timeSpend, breakTime, fSubjectV, sSubjectV, tSubjectV],
             backgroundColor: ["black", "red", "orange", "green", "blue"]
           }
         ]
