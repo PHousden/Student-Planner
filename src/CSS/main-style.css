@@ -98,6 +98,20 @@ main {
     box-shadow: 0 0 10px 0px;
     border: 2px solid rgba(103, 247, 187, 0.822);
 }
+#first_percentage, #second_percentage, #third_percentage {
+
+    width: 250px;
+    height: 20px;
+    font-size: 18px;
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 20px;
+    border-radius: 25px;
+    padding: 10px;
+    box-shadow: 0 0 10px 0px;
+    border: 2px solid rgba(103, 247, 187, 0.822);
+
+}
 .button {
     margin: 30px;
     padding: 10px;
